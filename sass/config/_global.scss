@@ -18,10 +18,19 @@ a{
   text-decoration: none;
   color: $white;
 }
-div+div {
+.div-main {
   margin-left: 190px;
+  box-sizing: border-box;
+  height: 975px;
 }
 h1{
   margin: 0;
 }
-
+h2{
+  font-family: $bowlby;
+  font-size: 45px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}

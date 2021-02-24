@@ -1,0 +1,47 @@
+.main-proyects, .main-exercises, .main-comments{
+
+  h3{
+    font-family: $bowlby;
+    font-size: 38px;
+    letter-spacing: 4px;
+  }
+  ul{
+    margin: 0 auto;
+    width: 1450px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  h2{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.main-proyects, .main-exercises{
+  a{
+    margin-left: 66px;
+    display: inline-block;
+
+  }
+  img{
+    display: inline-block;
+  }
+  h3{
+    display: none;
+  }
+  li{
+    position: relative;
+    width: 673px;
+  }
+  li:hover{
+    h3{
+      display: block;
+      position: absolute;
+      bottom: 120px;
+      left: -20px;
+      z-index: 1;
+    }
+  }
+}
+

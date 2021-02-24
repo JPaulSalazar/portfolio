@@ -18,46 +18,179 @@ a {
   text-decoration: none;
   color: white; }
 
-div + div {
-  margin-left: 190px; }
+.div-main {
+  margin-left: 190px;
+  box-sizing: border-box;
+  height: 975px; }
 
 h1 {
   margin: 0; }
 
+h2 {
+  font-family: "Bowlby One", "Arial", cursive;
+  font-size: 45px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase; }
+
 .menu-bar {
-  color: chocolate;
+  background-color: rgba(0, 0, 0, 0.616);
   position: fixed;
   width: 180px;
   height: 1462px;
   z-index: 100;
   margin: 0;
   border-right: solid 10px white;
-  font-size: 30px; }
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Bowlby One", "Arial", cursive; }
   .menu-bar li + li {
     transform: rotate(-90deg);
-    margin-top: 125px; }
+    margin-top: 140px; }
   .menu-bar li:first-child {
     margin-left: 30px;
     margin-top: 20px; }
 
 .hero-video {
-  position: absolute;
+  position: relative;
   position: fixed;
-  width: 2855px;
-  height: 975px;
+  width: 100%;
+  height: 100%;
   z-index: -1; }
   .hero-video video {
-    position: relative;
     object-fit: cover;
     width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    height: 100%; }
 
 .hero {
   height: 975px;
   text-align: center;
-  padding-top: 255px; }
+  padding-top: 255px;
+  box-sizing: border-box;
+  letter-spacing: 10px; }
   .hero h1 {
-    font-size: 140px; }
+    font-family: "Bowlby One", "Arial", cursive;
+    font-size: 100px; }
+
+.main-proyects h3, .main-exercises h3, .main-comments h3 {
+  font-family: "Bowlby One", "Arial", cursive;
+  font-size: 38px;
+  letter-spacing: 4px; }
+
+.main-proyects ul, .main-exercises ul, .main-comments ul {
+  margin: 0 auto;
+  width: 1450px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.main-proyects h2, .main-exercises h2, .main-comments h2 {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.main-proyects a, .main-exercises a {
+  margin-left: 66px;
+  display: inline-block; }
+
+.main-proyects img, .main-exercises img {
+  display: inline-block; }
+
+.main-proyects h3, .main-exercises h3 {
+  display: none; }
+
+.main-proyects li, .main-exercises li {
+  position: relative;
+  width: 673px; }
+
+.main-proyects li:hover h3, .main-exercises li:hover h3 {
+  display: block;
+  position: absolute;
+  bottom: 120px;
+  left: -20px;
+  z-index: 1; }
+
+.main-proyects {
+  background-color: #172732; }
+
+.main-exercises {
+  background-color: #223D47; }
+
+.main-comments {
+  background-color: #425957; }
+
+.comments-list img {
+  float: left; }
+
+.comments-list div {
+  float: left;
+  padding-left: 35px;
+  width: 346px; }
+
+.comments-list p {
+  font-family: "Roboto", "Arial", cursive;
+  margin-top: 30x;
+  margin-bottom: 15px;
+  font-size: 20px; }
+
+.comments-list h3 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.main-about {
+  background-color: #172732; }
+  .main-about h2 {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .main-about h3 {
+    font-size: 38px;
+    font-family: "Bowlby One", "Arial", cursive;
+    letter-spacing: 4px;
+    margin: 0; }
+  .main-about p {
+    font-family: "Roboto", "Arial", cursive;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .main-about .about-content {
+    padding-top: 140px;
+    margin-left: 300px; }
+  .main-about .div-float {
+    float: left;
+    padding-left: 80px; }
+  .main-about .logos {
+    padding-left: 80px;
+    display: inline-block; }
+  .main-about img {
+    display: inline-block; }
+  .main-about a {
+    display: inline-block; }
+
+.logo-margin {
+  padding-left: 100px;
+  padding-right: 100px; }
+
+.button-contact {
+  margin: 0 auto; }
+  .button-contact a {
+    width: 200px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+    text-align: center;
+    font-family: "Bowlby One", "Arial", cursive;
+    font-size: 20px;
+    background-color: #797255;
+    box-sizing: border-box;
+    margin-top: 30px; }
+    .button-contact a:hover {
+      color: #797255;
+      background-color: white; }
+    .button-contact a img:hover {
+      fill: #797255; }
+
+.contact-modal {
+  display: none; }
