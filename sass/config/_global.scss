@@ -18,10 +18,17 @@ a{
   text-decoration: none;
   color: $white;
 }
-.div-main {
+.wrapper{
   margin-left: 190px;
-  box-sizing: border-box;
-  height: 975px;
+}
+.div-main {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+.subwrapper{
+  width: 1450px;
+  margin: 0 auto;
 }
 h1{
   margin: 0;
@@ -33,4 +40,6 @@ h2{
   text-align: center;
   margin: 0;
   text-transform: uppercase;
+  text-shadow: -5px 5px 0px #8d8d8d, -10px 10px 0px #525252;
 }
+

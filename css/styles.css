@@ -18,10 +18,17 @@ a {
   text-decoration: none;
   color: white; }
 
+.wrapper {
+  margin-left: 190px; }
+
 .div-main {
-  margin-left: 190px;
-  box-sizing: border-box;
-  height: 975px; }
+  height: 100vh;
+  position: sticky;
+  top: 0; }
+
+.subwrapper {
+  width: 1450px;
+  margin: 0 auto; }
 
 h1 {
   margin: 0; }
@@ -32,14 +39,15 @@ h2 {
   letter-spacing: 5px;
   text-align: center;
   margin: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-shadow: -5px 5px 0px #8d8d8d, -10px 10px 0px #525252; }
 
 .menu-bar {
   background-color: rgba(0, 0, 0, 0.616);
   position: fixed;
   width: 180px;
   height: 1462px;
-  z-index: 100;
+  z-index: 2;
   margin: 0;
   border-right: solid 10px white;
   font-size: 20px;
@@ -51,6 +59,59 @@ h2 {
   .menu-bar li:first-child {
     margin-left: 30px;
     margin-top: 20px; }
+  .menu-bar .menu-hover:hover {
+    border: solid 4px white;
+    box-sizing: border-box; }
+
+.button {
+  width: 200px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Bowlby One", "Arial", cursive;
+  font-size: 20px;
+  background-color: #425957;
+  box-sizing: border-box;
+  border: solid 3px white;
+  border-radius: 7px; }
+  .button:hover {
+    background-image: url(".././img/colors.gif");
+    background-size: cover; }
+
+.contact-modal {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.931); }
+  .contact-modal input {
+    width: 800px;
+    height: 50px; }
+  .contact-modal label {
+    width: 800px;
+    font-family: "Bowlby One", "Arial", cursive;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .contact-modal textarea {
+    width: 800px;
+    height: 50px; }
+  .contact-modal label, .contact-modal input, .contact-modal textarea, .contact-modal button {
+    display: block;
+    margin: 0 auto; }
+  .contact-modal a {
+    position: fixed;
+    top: 50px;
+    right: 50px; }
+  .contact-modal h2 {
+    padding: 60px;
+    padding-bottom: 0; }
+  .contact-modal button {
+    margin-top: 60px;
+    color: white; }
 
 .hero-video {
   position: relative;
@@ -71,7 +132,8 @@ h2 {
   letter-spacing: 10px; }
   .hero h1 {
     font-family: "Bowlby One", "Arial", cursive;
-    font-size: 100px; }
+    font-size: 100px;
+    text-shadow: -5px 5px 0px #8d8d8d, -10px 10px 0px #525252; }
 
 .main-proyects h3, .main-exercises h3, .main-comments h3 {
   font-family: "Bowlby One", "Arial", cursive;
@@ -98,18 +160,22 @@ h2 {
   display: inline-block; }
 
 .main-proyects h3, .main-exercises h3 {
-  display: none; }
+  position: absolute;
+  bottom: 120px;
+  left: -20px;
+  z-index: 1; }
 
 .main-proyects li, .main-exercises li {
   position: relative;
   width: 673px; }
 
 .main-proyects li:hover h3, .main-exercises li:hover h3 {
-  display: block;
-  position: absolute;
-  bottom: 120px;
-  left: -20px;
-  z-index: 1; }
+  color: transparent;
+  background-image: url(".././img/colors.gif");
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white; }
 
 .main-proyects {
   background-color: #172732; }
@@ -141,27 +207,28 @@ h2 {
 .main-about {
   background-color: #172732; }
   .main-about h2 {
-    padding-top: 60px;
-    padding-bottom: 60px; }
+    padding-top: 60px; }
   .main-about h3 {
     font-size: 38px;
     font-family: "Bowlby One", "Arial", cursive;
     letter-spacing: 4px;
-    margin: 0; }
+    margin: 0;
+    text-align: center; }
   .main-about p {
     font-family: "Roboto", "Arial", cursive;
     font-size: 20px;
     margin: 0;
-    padding-top: 30px;
-    padding-bottom: 30px; }
-  .main-about .about-content {
-    padding-top: 140px;
-    margin-left: 300px; }
-  .main-about .div-float {
-    float: left;
-    padding-left: 80px; }
+    padding-top: 76px;
+    padding-bottom: 66px; }
+  .main-about .about-float {
+    padding-top: 160px; }
+  .main-about .float-text {
+    width: 880px;
+    float: left; }
+  .main-about .float-pic {
+    float: right; }
   .main-about .logos {
-    padding-left: 80px;
+    padding-left: 270px;
     display: inline-block; }
   .main-about img {
     display: inline-block; }
@@ -173,24 +240,10 @@ h2 {
   padding-right: 100px; }
 
 .button-contact {
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 70px; }
   .button-contact a {
-    width: 200px;
-    height: 80px;
     display: block;
     margin: 0 auto;
-    padding-top: 25px;
-    text-align: center;
-    font-family: "Bowlby One", "Arial", cursive;
-    font-size: 20px;
-    background-color: #797255;
-    box-sizing: border-box;
-    margin-top: 30px; }
-    .button-contact a:hover {
-      color: #797255;
-      background-color: white; }
-    .button-contact a img:hover {
-      fill: #797255; }
-
-.contact-modal {
-  display: none; }
+    padding-top: 20px;
+    text-align: center; }
