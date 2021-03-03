@@ -1,0 +1,54 @@
+.main-about{
+  background-color: $dark-blue;
+  h2{
+    padding-top: 60px;
+  }
+  h3{
+    font-size: 38px;
+    font-family: $bowlby;
+    letter-spacing: 4px;
+    margin: 0;
+    text-align: center;
+  }
+  p{
+    font-family: $roboto;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 76px;
+    padding-bottom: 66px;
+  }
+  .about-float{
+    padding-top: 160px;
+  }
+  .float-text{
+    width: 880px;
+    float: left;
+  }
+  .float-pic{
+    float: right;
+  }
+  .logos{
+    padding-left: 270px;
+    display: inline-block;
+  }
+  img{
+    display: inline-block;
+  }
+  a{
+    display: inline-block;
+  }
+}
+.logo-margin{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.button-contact{
+  margin: 0 auto;
+  margin-top: 70px;
+  a{
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+  }
+}

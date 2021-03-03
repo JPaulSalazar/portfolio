@@ -1,0 +1,24 @@
+.main-comments{
+  background-color: $green;
+  }
+
+.comments-list{
+  img{
+    float:left;
+  }
+  div{
+    float:left;
+    padding-left: 35px;
+    width: 346px;
+  }
+  p{
+    font-family: $roboto;
+    margin-top: 30x;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  h3{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
