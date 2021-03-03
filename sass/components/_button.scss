@@ -1,15 +1,16 @@
 .button{
-  width: 200px;
-  height: 80px;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  font-family:$bowlby;
-  font-size: 20px;
   background-color: $green;
-  box-sizing: border-box;
   border: solid 3px white;
   border-radius: 7px;
+  box-sizing: border-box;
+  display: block;
+  font-family:$bowlby;
+  font-size: 20px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  
   &:hover{
     background-image: url(".././img/colors.gif");
     background-size: cover;

@@ -1,13 +1,42 @@
 .hero{
   height: 975px;
   text-align: center;
-  padding-top: 255px;
+  padding-top: 200px;
   box-sizing: border-box;
   letter-spacing: 10px;
+  position: relative;
 
   h1{
     font-family: $bowlby;
     font-size: 100px;
     text-shadow: -5px 5px 0px #8d8d8d, -10px 10px 0px #525252;
+  }
+}
+.hero-title{
+  width: 1037px;
+  margin: 0 auto;
+}
+.hero-title-button{
+  position: absolute;
+  top:35px;
+  right: 25px;
+  font-family: $roboto;
+  width: 90px;
+  font-size: 12px;
+  background-color: #172732a2;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.582);
+
+  h4{
+    float: left;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+  img{
+    padding-left: 18px;
+    padding-top: 15px;
+    float: left;
+    opacity: 0.5;
   }
 }

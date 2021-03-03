@@ -5,20 +5,30 @@
     font-size: 38px;
     letter-spacing: 4px;
   }
-  ul{
-    margin: 0 auto;
-    width: 1450px;
-    height: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
   h2{
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 .main-proyects, .main-exercises{
+  ul{
+    margin: 0 auto;
+    width: 1450px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding-top: 60px;
+  }
+  ul::-webkit-scrollbar {
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.472);
+  }
+    ul::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
   a{
     margin-left: 66px;
     display: inline-block;
@@ -28,13 +38,14 @@
   }
   h3{
     position: absolute;
-    bottom: 120px;
-    left: -20px;
+    bottom: -3px;
+    left: -5px;
     z-index: 1;
   }
   li{
     position: relative;
-    width: 673px;
+    flex-basis: 700px;
+    margin-left: 30px;
   }
   li:hover{
     h3{

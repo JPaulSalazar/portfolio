@@ -21,4 +21,12 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+  ul{
+    margin: 0 auto;
+    width: 1450px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
