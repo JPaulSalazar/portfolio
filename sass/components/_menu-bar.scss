@@ -1,21 +1,22 @@
 .menu-bar{
   background-color: $black-transparent;
+  border-right: solid 10px $white;
+  font-family: $bowlby;
+  font-size: 20px;
+  height: 1462px;
+  letter-spacing: 1px;
+  margin: 0;
   position: fixed;
   width: 180px;
-  height: 1462px;
   z-index: 2;
-  margin: 0;
-  border-right: solid 10px $white;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-family: $bowlby;
-  li+li{
-    transform: rotate(-90deg);
-    margin-top: 140px;
-  }
+
   li:first-child {
     margin-left: 30px;
     margin-top: 20px;
+  }
+  li+li{
+    margin-top: 140px;
+    transform: rotate(-90deg);
   }
   .menu-hover:hover{
     border: solid 4px white;
