@@ -1,61 +1,63 @@
-.main-proyects, .main-exercises, .main-comments{
+// estilos generales donde hay patrones de diseños en listas de elementos del main
 
-  h3{
-    font-family: $bowlby;
-    font-size: 38px;
-    letter-spacing: 4px;
-  }
-  h2{
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-.main-proyects, .main-exercises{
-  ul{
-    margin: 0 auto;
-    width: 1450px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    overflow-x: scroll;
-    padding-top: 60px;
-  }
-  ul::-webkit-scrollbar {
-    border-radius: 10px;
-    background-color:rgba(0, 0, 0, 0.472);
-  }
-    ul::-webkit-scrollbar-thumb{
-    border-radius: 10px;
-    background-color: #ffffff;
-  }
-
+.main__proyects, .main__exercises{
   a{
-    margin-left: 66px;
     display: inline-block;
+    margin-left: 66px;
+  }
+  h3{
+    bottom: -3px;
+    font-size: 38px;
+    left: -5px;
+    position: absolute;
+    z-index: 1;
   }
   img{
     display: inline-block;
   }
-  h3{
-    position: absolute;
-    bottom: -3px;
-    left: -5px;
-    z-index: 1;
-  }
   li{
-    position: relative;
     flex-basis: 700px;
     margin-left: 30px;
-  }
-  li:hover{
-    h3{
-      color: transparent;
-      background-image: url(".././img/colors.gif");
-      background-size: cover;
-      -webkit-background-clip: text;
-      -webkit-text-stroke-width: 0.5px;
-      -webkit-text-stroke-color: white;
+    position: relative;
+
+    &:hover{
+      h3{
+        -webkit-background-clip: text;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: $boder-white;
+        background-image: url(".././img/colors.gif");
+        background-size: cover;
+        color: transparent;
+      }
     }
+  }
+  ul{
+    align-items: center;
+    display: flex;
+    height: 500px;
+    margin: 0 auto;
+    overflow-x: scroll;
+    padding-top: 60px;
+    width: 1450px;
+
+    &::-webkit-scrollbar {
+      background-color: $scroll-background-color;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+      background-color: $scroll-bar-color;
+      border-radius: 10px;
+    }
+  }
+}
+.main__proyects, .main__exercises, .main__comments{
+  h2{
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  h3{
+    font-family: $principal-font;
+    letter-spacing: 4px;
   }
 }
 

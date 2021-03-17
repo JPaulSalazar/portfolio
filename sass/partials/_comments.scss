@@ -1,32 +1,36 @@
-.main-comments{
-  background-color: $green;
-  }
+//zona de los comentarios
+.main__comments{
+  background-color: $third-background;
 
-.comments-list{
-  img{
-    float:left;
+  h3{
+    font-size: 32px;
   }
+}
+.comments__container{
   div{
     float:left;
     padding-left: 35px;
     width: 346px;
   }
-  p{
-    font-family: $roboto;
-    margin-top: 30x;
-    margin-bottom: 15px;
-    font-size: 20px;
-  }
   h3{
-    margin-top: 0;
     margin-bottom: 0;
+    margin-top: 0;
+  }
+  img{
+    float:left;
+  }
+  p{
+    font-family: $secondary-font;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 30px;
   }
   ul{
-    margin: 0 auto;
-    width: 1450px;
-    height: 800px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: 800px;
+    margin: 0 auto;
+    width: 1450px;
   }
 }
