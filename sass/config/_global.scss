@@ -1,47 +1,54 @@
 a{
+  color: $principal-font-color;
   text-decoration: none;
-  color: $white;
 }
 body{
   margin: 0;
-}
-body::-webkit-scrollbar {
-  background-color:rgba(0, 0, 0, 0.472);
-}
-body::-webkit-scrollbar-thumb{
-  border-radius: 10px;
-  background-color: #ffffff;
+
+  //estilos de la barra de scroll del menu
+  &::-webkit-scrollbar {
+    background-color:$scroll-background-color;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: $scroll-bar-color;
+    border-radius: 10px;
+  }
 }
 html{
-  color: $white;
+  color: $principal-font-color;
 }
 h1{
   margin: 0;
 }
 h2{
-  font-family: $bowlby;
+  font-family: $principal-font;
   font-size: 45px;
   letter-spacing: 5px;
+  margin: 0;
   text-align: center;
-  margin: 0;
   text-transform: uppercase;
-  text-shadow: -5px 5px 0px #8d8d8d, -10px 10px 0px #525252;
 }
+img{
+  border-radius: 9px;
+}
+//para que no de problemas el ul
 ul{
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+//para los floats
 .clearfix::after {
+  display: table;
   clear: both;
   content: "";
-  display: table;
 }
 .div-main {
   height: 100vh;
   position: sticky;
   top: 0;
 }
+//tamaños de los wrappers
 .subwrapper{
   margin: 0 auto;
   width: 1450px;
